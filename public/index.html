@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><div class="eyebrow">A small daily practice room</div><h1>Skill <em>Lab</em></h1><p>Pick a lane, make one clean attempt, and watch your focus sharpen.</p></header>
+    <nav class="tabs" aria-label="Choose a skill"><button class="tab active" data-skill="math">01 <span>Quick Math</span></button><button class="tab" data-skill="memory">02 <span>Memory Sequence</span></button><button class="tab" data-skill="typing">03 <span>Typing Sprint</span></button></nav>
+    <section class="workbench"><div class="workbench-top"><div><div class="eyebrow" id="skillKicker">Mental arithmetic</div><h2 id="skillTitle">Quick Math</h2></div><div class="scoreboard"><span>Score</span><strong id="score">0</strong></div></div>
+      <div class="game" id="mathGame"><p class="prompt">Solve before the rhythm breaks.</p><div class="challenge" id="mathQuestion">-- + --</div><form class="answer-row" id="mathForm"><input id="mathAnswer" type="number" inputmode="numeric" autocomplete="off" placeholder="Your answer" aria-label="Math answer"><button>Check <span>Enter</span></button></form><p class="feedback" id="mathFeedback">Your first question is ready.</p></div>
+      <div class="game hidden" id="memoryGame"><p class="prompt">Remember the order. It grows after every round.</p><div class="sequence" id="sequence" aria-live="polite">Ready?</div><button class="primary action-button" id="memoryStart">Show sequence</button><div class="memory-inputs hidden" id="memoryInputs"></div><p class="feedback" id="memoryFeedback">You will get one second per item.</p></div>
+      <div class="game hidden" id="typingGame"><p class="prompt">Accuracy first. Speed follows.</p><blockquote id="typingPrompt">Small steps make strong habits.</blockquote><textarea id="typingInput" rows="3" placeholder="Start typing here..." aria-label="Typing practice input"></textarea><div class="typing-meta"><span id="typingStats">0 words · 0% accuracy</span><button class="primary" id="typingReset">New phrase</button></div><p class="feedback" id="typingFeedback">The clock starts with your first key.</p></div>
+    </section>
+    <footer><span>Three minutes is enough.</span><span id="bestScore">Best score: 0</span></footer>
+  </main><script src="/app.js"></script>
+</body>
+</html>

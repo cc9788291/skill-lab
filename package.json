@@ -1,0 +1,17 @@
+{
+  "name": "skill-lab",
+  "version": "1.0.0",
+  "main": "server.js",
+  "files": [
+    "public",
+    "server.js",
+    "README.md"
+  ],
+  "description": "Three small browser skill games served by Node.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "pack:check": "npm pack --dry-run"
+  }
+}
